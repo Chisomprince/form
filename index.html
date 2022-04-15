@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--webpage title-->
+    <title>Ecommerce project</title>
+
+    <!--styles-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link href="./index.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/bc345a5315.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand"><img />Flint</a>
+
+        <div
+          class="d-flex flex-row justify-content-center align-items-center gap-4"
+        >
+          <div class="mx-3 d-lg-none" style="position: relative">
+            <i class="fa-solid fa-bag-shopping fa-1x"></i>
+            <span
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center text-white"
+              style="
+                position: absolute;
+                bottom: -5px;
+                left: 10px;
+                height: 14px;
+                width: 14px;
+                font-size: 10px;
+              "
+            >
+              2
+            </span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collasibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="collasibleNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link">Demos</a></li>
+            <li class="nav-item"><a class="nav-link active">Shop</a></li>
+            <li class="nav-item"><a class="nav-link">Collection</a></li>
+            <li class="nav-item"><a class="nav-link">Journal</a></li>
+            <li class="nav-item"><a class="nav-link">Elements</a></li>
+            <li class="nav-item"><a class="nav-link">Pages</a></li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link">
+                <div class="mx-1" style="position: relative">
+                  <i class="fa-solid fa-bag-shopping fa-1x"></i>
+                  <span
+                    class="rounded-circle bg-danger d-flex justify-content-center align-items-center text-white"
+                    style="
+                      position: absolute;
+                      bottom: -5px;
+                      left: 10px;
+                      height: 14px;
+                      width: 14px;
+                      font-size: 10px;
+                    "
+                  >
+                    2
+                  </span>
+                </div></a
+              >
+            </li>
+
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link"><i class="fa-solid fa-bars"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navigation bar -->
+
+    <!-- start of slider  -->
+    <div id="main-slide" class="carousel slide" data-bs-ride="carousel">
+      <!-- start carousel-indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#main-slide"
+          data-bs-slide-to="0"
+          class="active bg-secondary"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#main-slide"
+          data-bs-slide-to="1"
+          aria-label="Slide 2 "
+          class="bg-secondary"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#main-slide"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+          class="bg-secondary"
+        ></button>
+      </div>
+      <!-- end of carousel-indicators -->
+
+      <!-- start of carousel items -->
+      <div class="carousel-inner bg-light">
+        <div class="carousel-item active" style="height: 75vh">
+          <div
+            class="d-flex flex-row justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              alt="girl in suit"
+              style="position: absolute; top: 40px; left: 8px"
+            />
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              alt="girl in suit"
+              style="position: absolute; top: 40px; right: 8px; float: right"
+            />
+            <div style="z-index: 999">
+              <h2>Shope Default</h2>
+
+              <!-- breadcrumb -->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-light">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Library
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <!-- end of carousel items -->
+
+      <!-- start of carousel control buttons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#main-slide"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#main-slide"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <!-- start of carousel control buttons -->
+    </div>
+    <!-- end of slider  -->
+
+    <!-- start of product lists -->
+    <section class="container">
+      <!-- start of product filter -->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex p-4 gap-4">
+          <div
+            class="d-flex flex-row gap-4 bg-light rounded-lg justify-content-center align-items-center p-2"
+          >
+            <span>Sort By</span>
+            <span> </span>
+          </div>
+          <div
+            class="d-flex flex-row gap-2 bg-light rounded-lg justify-content-center align-items-center p-2"
+          >
+            <span>Filter products</span>
+            <span> </span>
+          </div>
+        </div>
+        <div class="d-flex p-4 gap-4">
+          <div
+            class="d-flex flex-row gap-4 bg-light rounded-lg justify-content-center align-items-center p-2"
+          >
+            <span>Sort By</span>
+            <span> </span>
+          </div>
+          <div
+            class="d-flex flex-row gap-2 bg-light rounded-lg justify-content-center align-items-center p-2"
+          >
+            <span>Filter products</span>
+            <span> </span>
+          </div>
+        </div>
+      </div>
+      <!-- end of product filter -->
+
+      <!-- start of product card items -->
+
+      <div class="row p-4">
+        <div class="card col-4 border-0">
+          <img
+            src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+            class="card-img-top bg-light"
+            style="height: 300px; object-fit: contain"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
+            <p class="card-text text-center fs-6">$199.00</p>
+          </div>
+        </div>
+        <div class="card col-4 border-0">
+          <img
+            src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+            class="card-img-top bg-light"
+            style="height: 300px; object-fit: contain"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
+            <p class="card-text text-center fs-6">$199.00</p>
+          </div>
+        </div>
+        <div class="card col-4 border-0">
+          <img
+            src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+            class="card-img-top bg-light"
+            style="height: 300px; object-fit: contain"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
+            <p class="card-text text-center fs-6">$199.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of product card items -->
+    </section>
+    <!-- end of product lists -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
