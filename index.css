@@ -1,3 +1,27 @@
 .hero {
   height: 80vh;
 }
+
+.card:hover .image {
+  opacity: 0.3;
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover .card-action {
+  opacity: 1;
+}
+
+.card-action {
+  transition: 0.5s ease;
+  opacity: 0;
+  margin-top: -50px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-action:hover {
+  display: block;
+}
