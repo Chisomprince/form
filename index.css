@@ -10,17 +10,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .hero {
-    height: 60vh;
-  }
-
   .hero-img_right {
     display: none;
   }
 
   .hero-img_left {
     position: absolute;
-    left: -2500px;
+    left: 50px;
   }
 }
 

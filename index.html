@@ -37,11 +37,16 @@
         <!-- web title -->
         <a class="navbar-brand fs-4 fw-bold">Flint</a>
 
-        <!-- cart bag for mobile -->
+        <!-- mobile menu and actions -->
         <div
           class="d-flex flex-row justify-content-center align-items-center gap-4"
         >
-          <div class="mx-3 d-lg-none" style="position: relative">
+          <!-- search for mobile -->
+          <a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <!-- cart bag for mobile -->
+          <div class="d-lg-none" style="position: relative">
             <i class="fa-solid fa-bag-shopping fa-1x"></i>
             <span
               class="rounded-circle bg-danger d-flex justify-content-center align-items-center text-white"
@@ -57,16 +62,16 @@
               2
             </span>
           </div>
+          <!--end cart bag for mobile -->
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#collasibleNavbar"
+            data-bs-toggle="collapse"
+            data-bs-target="#collasibleNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <!--end cart bag for mobile -->
 
         <div class="navbar-collapse collapse" id="collasibleNavbar">
           <!-- nav links -->
@@ -82,11 +87,14 @@
 
           <!-- nav actions  -->
           <ul class="navbar-nav">
+            <!-- search -->
             <li class="nav-item d-none d-lg-block">
               <a class="nav-link"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></a>
             </li>
+
+            <!-- cart bag -->
             <li class="nav-item d-none d-lg-block">
               <a class="nav-link">
                 <div class="mx-1" style="position: relative">
@@ -108,6 +116,7 @@
               >
             </li>
 
+            <!-- menu -->
             <li class="nav-item d-none d-lg-block">
               <a class="nav-link"><i class="fa-solid fa-bars"></i></a>
             </li>
@@ -150,9 +159,10 @@
       <!-- start of carousel items -->
       <div class="carousel-inner bg-light hero">
         <!-- item -->
-        <div class="carousel-item active">
+        <div class="carousel-item active" style="height: 75vh">
           <div
             class="d-flex flex-row justify-content-center align-items-center"
+            style="height: 100%"
           >
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
@@ -165,7 +175,7 @@
               class="hero-img_right"
             />
             <div style="z-index: 999">
-              <h2 class="">Shope Default</h2>
+              <h2>Shope Default 1</h2>
 
               <!-- breadcrumb -->
               <nav aria-label="breadcrumb">
@@ -198,7 +208,40 @@
               class="hero-img_right"
             />
             <div style="z-index: 999">
-              <h2>Shope Default</h2>
+              <h2>Shope Default 2</h2>
+
+              <!-- breadcrumb -->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Library
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- end of item -->
+
+        <!-- item -->
+        <div class="carousel-item" style="height: 75vh">
+          <div
+            class="d-flex flex-row justify-content-center align-items-center"
+            style="height: 100%"
+          >
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              alt="girl in suit"
+              class="hero-img_left"
+            />
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              alt="girl in suit"
+              class="hero-img_right"
+            />
+            <div style="z-index: 999">
+              <h2>Shope Default 3</h2>
 
               <!-- breadcrumb -->
               <nav aria-label="breadcrumb">
