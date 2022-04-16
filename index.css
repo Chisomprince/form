@@ -1,5 +1,31 @@
 .hero {
-  height: 80vh;
+  height: 75vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-img_right {
+    position: absolute;
+    top: 40px;
+    right: -500px;
+  }
+
+  .hero-img_left {
+    position: absolute;
+    top: 40px;
+    left: -500px;
+  }
+}
+
+.hero-img_right {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+
+.hero-img_left {
+  position: absolute;
+  top: 40px;
+  left: 50px;
 }
 
 .card:hover .image {
