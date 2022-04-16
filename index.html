@@ -7,9 +7,15 @@
 
     <!--webpage title-->
     <title>Ecommerce project</title>
+    <!-- web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--styles-->
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,10 +32,10 @@
   </head>
   <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <!-- web title -->
-        <a class="navbar-brand"><img />Flint</a>
+        <a class="navbar-brand fs-4 fw-bold">Flint</a>
 
         <!-- cart bag for mobile -->
         <div
@@ -142,26 +148,24 @@
       <!-- end of carousel-indicators -->
 
       <!-- start of carousel items -->
-      <div class="carousel-inner bg-light">
+      <div class="carousel-inner bg-light hero">
         <!-- item -->
-        <div class="hero carousel-item active">
+        <div class="carousel-item active">
           <div
             class="d-flex flex-row justify-content-center align-items-center"
-            style="height: 100%"
           >
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
               alt="girl in suit"
-              style="position: absolute; top: 40px; left: 50px"
+              class="hero-img_left"
             />
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
               alt="girl in suit"
-              class="d-none d-lg-block"
-              style="position: absolute; top: 40px; right: 50px; float: right"
+              class="hero-img_right"
             />
             <div style="z-index: 999">
-              <h2 class="text-white">Shope Default</h2>
+              <h2 class="">Shope Default</h2>
 
               <!-- breadcrumb -->
               <nav aria-label="breadcrumb">
@@ -178,7 +182,7 @@
         <!-- end of item -->
 
         <!-- item -->
-        <div class="carousel-item active" style="height: 75vh">
+        <div class="carousel-item" style="height: 75vh">
           <div
             class="d-flex flex-row justify-content-center align-items-center"
             style="height: 100%"
@@ -240,24 +244,24 @@
       <!-- start of product filter -->
       <div class="d-flex justify-content-lg-between">
         <!-- start of product filter and sort -->
-        <div class="d-flex p-4 gap-4">
+        <div class="d-flex p-4 gap-3 gap-lg-4">
           <div
-            class="d-flex flex-row gap-4 bg-light rounded-lg justify-content-center align-items-center p-2"
+            class="d-flex flex-row gap-2 gap-lg-4 bg-light rounded-lg justify-content-center align-items-center p-2"
           >
-            <span>Sort By</span>
+            <span style="white-space: nowrap">Sort By</span>
             <span> <i class="fa-solid fa-caret-down"></i></span>
           </div>
           <div
-            class="d-flex flex-row gap-4 bg-light rounded-lg justify-content-center align-items-center p-2"
+            class="d-flex flex-row gap-2 gap-lg-4 bg-light rounded-lg justify-content-center align-items-center p-2"
           >
-            <span>Filter products</span>
+            <span style="white-space: nowrap">Filter products</span>
             <span><i class="fa-solid fa-caret-down"></i> </span>
           </div>
         </div>
         <!-- end of product filter and sort -->
 
         <!-- start of product list and grid -->
-        <div class="d-flex p-4 gap-4">
+        <div class="d-flex justify-content-center align-items-center p-4 gap-4">
           <div class="p-2 d-none d-lg-block">
             <span><i class="fa-solid fa-list"></i></span>
           </div>
@@ -476,13 +480,8 @@
     <!-- end of product lists -->
 
     <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
   </body>
