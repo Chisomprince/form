@@ -31,21 +31,21 @@
     ></script>
   </head>
   <body>
-    <!-- navigation bar -->
+    <!-- Navigation bar Starts -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
       <div class="container">
-        <!-- web title -->
-        <a class="navbar-brand fs-4 fw-bold">Flint</a>
+        <!-- web title or Logo -->
+        <a href="/" class="navbar-brand fs-4 fw-bold">Flint</a>
 
-        <!-- mobile menu and actions -->
+        <!-- Mobile menu, cart and search Start -->
         <div
           class="d-flex flex-row justify-content-center align-items-center gap-4"
         >
-          <!-- search for mobile -->
-          <a>
+          <!-- Search for mobile -->
+          <a href="#" class="d-lg-none">
             <i class="fa-solid fa-magnifying-glass"></i>
           </a>
-          <!-- cart bag for mobile -->
+          <!-- Cart bag for mobile Starts-->
           <div class="d-lg-none" style="position: relative">
             <i class="fa-solid fa-bag-shopping fa-1x"></i>
             <span
@@ -62,7 +62,8 @@
               2
             </span>
           </div>
-          <!--end cart bag for mobile -->
+          <!--Cart for mobile Ends-->
+          <!--Mobile menu Starts-->
           <button
             class="navbar-toggler"
             type="button"
@@ -72,31 +73,31 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-
+        <!--Mobile menu Ends-->
         <div class="navbar-collapse collapse" id="collasibleNavbar">
-          <!-- nav links -->
+          <!-- Nav links Starts-->
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link">Demos</a></li>
-            <li class="nav-item"><a class="nav-link active">Shop</a></li>
-            <li class="nav-item"><a class="nav-link">Collection</a></li>
-            <li class="nav-item"><a class="nav-link">Journal</a></li>
-            <li class="nav-item"><a class="nav-link">Elements</a></li>
-            <li class="nav-item"><a class="nav-link">Pages</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Demos</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link active">Shop</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Collection</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Journal</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Elements</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Pages</a></li>
           </ul>
-          <!-- end of nav links -->
+          <!-- Nav links Ends-->
 
-          <!-- nav actions  -->
+          <!-- Nav actions Starts -->
           <ul class="navbar-nav">
-            <!-- search -->
             <li class="nav-item d-none d-lg-block">
-              <a class="nav-link"
+              <a href="#" class="nav-link"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></a>
             </li>
 
-            <!-- cart bag -->
             <li class="nav-item d-none d-lg-block">
-              <a class="nav-link">
+              <a href="#" class="nav-link">
                 <div class="mx-1" style="position: relative">
                   <i class="fa-solid fa-bag-shopping fa-1x"></i>
                   <span
@@ -116,20 +117,67 @@
               >
             </li>
 
-            <!-- menu -->
             <li class="nav-item d-none d-lg-block">
-              <a class="nav-link"><i class="fa-solid fa-bars"></i></a>
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="fa-solid fa-bars"></i
+                ></a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-center"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#"><small>Cloths</small></a>
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Shoes</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Boys</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Girls</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Ladies</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Men</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Babies</small></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
-          <!-- end of nav actions -->
+          <!-- Nav actions Ends-->
         </div>
       </div>
     </nav>
-    <!-- end of navigation bar -->
+    <!-- Navigation bar Ends -->
 
-    <!-- start of slider  -->
+    <!-- Slider Starts -->
     <div id="main-slide" class="carousel slide" data-bs-ride="carousel">
-      <!-- start carousel-indicators -->
+      <!--Carousel-indicators Start-->
       <div class="carousel-indicators">
         <button
           type="button"
@@ -154,110 +202,57 @@
           class="bg-secondary"
         ></button>
       </div>
-      <!-- end of carousel-indicators -->
+      <!--Carousel-indicators Ends -->
 
-      <!-- start of carousel items -->
+      <!-- Carousel items Starts-->
       <div class="carousel-inner bg-light hero">
-        <!-- item -->
+        <!-- Item Starts-->
         <div class="carousel-item active" style="height: 75vh">
           <div
-            class="d-flex flex-row justify-content-center align-items-center"
-            style="height: 100%"
+            class="d-flex flex-row justify-content-center align-items-center h-100"
+            style="
+              background-image: url(https://burst.shopifycdn.com/photos/clothing-on-retail-rack.jpg?width=925&format=pjpg&exif=1&iptc=1);
+              background-position: center;
+              background-size: cover;
+              background-position: no-repeat;
+            "
           >
-            <img
-              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-              alt="girl in suit"
-              class="hero-img_left"
-            />
-            <img
-              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-              alt="girl in suit"
-              class="hero-img_right"
-            />
-            <div style="z-index: 999">
-              <h2 class="fw-bold">Shope Default 1</h2>
-
-              <!-- breadcrumb -->
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Library
-                  </li>
-                </ol>
-              </nav>
-            </div>
+            <h2 class="fw-bold">Shope Default 1</h2>
           </div>
         </div>
-        <!-- end of item -->
-
-        <!-- item -->
+        <!-- Item Ends -->
+        <!-- Item Starts-->
         <div class="carousel-item" style="height: 75vh">
           <div
-            class="d-flex flex-row justify-content-center align-items-center"
-            style="height: 100%"
+            class="d-flex flex-row justify-content-center align-items-center h-100"
+            style="
+              background-image: url(https://burst.shopifycdn.com/photos/clothing-on-retail-rack.jpg?width=925&format=pjpg&exif=1&iptc=1);
+              background-position: center;
+              background-size: cover;
+              background-position: no-repeat;
+            "
           >
-            <img
-              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-              alt="girl in suit"
-              class="hero-img_left"
-            />
-            <img
-              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-              alt="girl in suit"
-              class="hero-img_right"
-            />
-            <div style="z-index: 999">
-              <h2 class="fw-bold">Shope Default 2</h2>
-
-              <!-- breadcrumb -->
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Library
-                  </li>
-                </ol>
-              </nav>
-            </div>
+            <h2 class="fw-bold">Shope Default 1</h2>
           </div>
         </div>
-        <!-- end of item -->
-
-        <!-- item -->
+        <!-- Item Ends -->
+        <!-- Item Starts-->
         <div class="carousel-item" style="height: 75vh">
           <div
-            class="d-flex flex-row justify-content-center align-items-center"
-            style="height: 100%"
+            class="d-flex flex-row justify-content-center align-items-center h-100"
+            style="
+              background-image: url(https://burst.shopifycdn.com/photos/clothing-on-retail-rack.jpg?width=925&format=pjpg&exif=1&iptc=1);
+              background-position: center;
+              background-size: cover;
+              background-position: no-repeat;
+            "
           >
-            <img
-              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-              alt="girl in suit"
-              class="hero-img_left"
-            />
-            <img
-              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-              alt="girl in suit"
-              class="hero-img_right"
-            />
-            <div style="z-index: 999">
-              <h2 class="fw-bold">Shope Default 3</h2>
-
-              <!-- breadcrumb -->
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Library
-                  </li>
-                </ol>
-              </nav>
-            </div>
+            <h2 class="fw-bold">Shope Default 1</h2>
           </div>
         </div>
-        <!-- end of item -->
+        <!-- Item Ends -->
       </div>
-      <!-- end of carousel items -->
+      <!-- Carousel items End-->
 
       <!-- start of carousel control buttons -->
       <button
@@ -280,46 +275,163 @@
       </button>
       <!-- start of carousel control buttons -->
     </div>
-    <!-- end of slider  -->
+    <!-- Slider Ends -->
 
-    <!-- start of product lists -->
-    <section class="container">
-      <!-- start of product filter -->
+    <!-- Product filter Start-->
+    <div class="container">
       <div class="d-flex justify-content-lg-between">
-        <!-- start of product filter and sort -->
-        <div class="d-flex p-4 gap-3 gap-lg-4">
-          <div
-            class="d-flex flex-row gap-2 gap-lg-4 bg-light rounded-lg justify-content-center align-items-center p-2"
-          >
-            <span style="white-space: nowrap">Sort By</span>
-            <span> <i class="fa-solid fa-caret-down"></i></span>
+        <!-- Product filter and sort Starts-->
+        <div
+          class="d-flex flex-row gap-2 gap-lg-4 rounded-lg justify-content-center align-items-center p-2"
+        >
+          <div class="btn-group">
+            <button
+              class="btn btn-outline-secondary btn-sm dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sort Product
+            </button>
+            <ul class="dropdown-menu p-3">
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>Free Shipping</small>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>Price</small>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>Discounted</small>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>New</small>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>Rating</small>
+                </label>
+              </div>
+            </ul>
           </div>
-          <div
-            class="d-flex flex-row gap-2 gap-lg-4 bg-light rounded-lg justify-content-center align-items-center p-2"
-          >
-            <span style="white-space: nowrap">Filter products</span>
-            <span><i class="fa-solid fa-caret-down"></i> </span>
+          <div class="btn-group">
+            <button
+              class="btn btn-outline-secondary btn-sm dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Filter Product
+            </button>
+            <ul class="dropdown-menu p-3">
+              <div class="mb-2">
+                <label for="customRange2" class="form-label mb-0"
+                  ><small>Price</small></label
+                >
+                <input
+                  type="range"
+                  class="form-range m-0"
+                  min="0"
+                  max="0"
+                  step="0.5"
+                  id="customRange2"
+                />
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>Color</small>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>Brand</small>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  <small>Price</small>
+                </label>
+              </div>
+            </ul>
           </div>
         </div>
-        <!-- end of product filter and sort -->
+        <!-- Product filter and sort Ends-->
 
-        <!-- start of product list and grid -->
+        <!-- product list and grid Starts-->
         <div class="d-flex justify-content-center align-items-center p-4 gap-4">
-          <div class="p-2 d-none d-lg-block">
+          <div class="p-2 d-none d-lg-block" id="list-btn">
             <span><i class="fa-solid fa-list"></i></span>
           </div>
-          <div class="p-2">
+          <div class="p-2" id="grid-btn">
             <span><i class="fa-solid fa-table-cells"></i></span>
           </div>
         </div>
-        <!-- end of product list and grid -->
+        <!-- Product list and grid Ends-->
       </div>
-      <!-- end of product filter -->
+    </div>
+    <!-- Product filter Ends -->
 
-      <!-- start of product card items -->
-      <div class="row p-4">
-        <!-- start product card -->
-        <div class="card col-md-6 col-lg-4 border-0 mb-4">
+    <!-- Product lists Start-->
+    <section class="container">
+      <!-- Product Grid cards Starts -->
+      <div class="row" id="grid-display">
+        <!-- Card Starts-->
+        <div class="card col-12 col-md-6 col-lg-4 border-0 mb-4 grid">
           <div class="bg-light">
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
@@ -328,7 +440,7 @@
               alt="..."
             />
           </div>
-          <!-- add to cart -->
+          <!-- Add to cart Ends -->
           <div class="card-action">
             <div
               class="d-flex flex-row gap-1 justify-content-center align-items-center"
@@ -339,26 +451,17 @@
               ></span>
             </div>
           </div>
-          <!-- end of add to cart -->
+          <!-- Add to cart Ends Ends -->
 
           <div class="card-body mt-2">
             <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
             <p class="card-text text-center fs-6">$199.00</p>
           </div>
         </div>
-        <!-- end product card -->
-
-        <!-- start product card -->
-        <div class="card col-md-6 col-lg-4 border-0 mb-4">
+        <!-- Card ends-->
+        <!-- Card Starts-->
+        <div class="card col-12 col-md-6 col-lg-4 border-0 mb-4 grid">
           <div class="bg-light">
-            <!-- product badge -->
-            <div
-              class="bg-success text-white text-center px-2 py-1"
-              style="width: 70px; position: absolute"
-            >
-              SALE
-            </div>
-            <!--end of product badge -->
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
               class="card-img-top"
@@ -366,7 +469,7 @@
               alt="..."
             />
           </div>
-          <!-- add to cart -->
+          <!-- Add to cart Ends -->
           <div class="card-action">
             <div
               class="d-flex flex-row gap-1 justify-content-center align-items-center"
@@ -377,16 +480,16 @@
               ></span>
             </div>
           </div>
+          <!-- Add to cart Ends Ends -->
 
-          <!-- end of add to cart -->
           <div class="card-body mt-2">
             <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
             <p class="card-text text-center fs-6">$199.00</p>
           </div>
         </div>
-        <!-- end product card -->
-        <!-- start product card -->
-        <div class="card col-md-6 col-lg-4 border-0 mb-4">
+        <!-- Card ends-->
+        <!-- Card Starts-->
+        <div class="card col-12 col-md-6 col-lg-4 border-0 mb-4 grid">
           <div class="bg-light">
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
@@ -395,7 +498,7 @@
               alt="..."
             />
           </div>
-          <!-- add to cart -->
+          <!-- Add to cart Ends -->
           <div class="card-action">
             <div
               class="d-flex flex-row gap-1 justify-content-center align-items-center"
@@ -406,25 +509,17 @@
               ></span>
             </div>
           </div>
+          <!-- Add to cart Ends Ends -->
 
-          <!-- end of add to cart -->
           <div class="card-body mt-2">
             <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
             <p class="card-text text-center fs-6">$199.00</p>
           </div>
         </div>
-        <!-- end product card -->
-        <!-- start product card -->
-        <div class="card col-md-6 col-lg-4 border-0 mb-4">
+        <!-- Card ends-->
+        <!-- Card Starts-->
+        <div class="card col-12 col-md-6 col-lg-4 border-0 mb-4 grid">
           <div class="bg-light">
-            <!-- product badge -->
-            <div
-              class="bg-primary text-white text-center px-2 py-1"
-              style="width: 70px; position: absolute"
-            >
-              NEW
-            </div>
-            <!--end of product badge -->
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
               class="card-img-top"
@@ -432,7 +527,7 @@
               alt="..."
             />
           </div>
-          <!-- add to cart -->
+          <!-- Add to cart Ends -->
           <div class="card-action">
             <div
               class="d-flex flex-row gap-1 justify-content-center align-items-center"
@@ -443,16 +538,16 @@
               ></span>
             </div>
           </div>
+          <!-- Add to cart Ends Ends -->
 
-          <!-- end of add to cart -->
           <div class="card-body mt-2">
             <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
             <p class="card-text text-center fs-6">$199.00</p>
           </div>
         </div>
-        <!-- end product card -->
-        <!-- start product card -->
-        <div class="card col-md-6 col-lg-4 border-0 mb-4">
+        <!-- Card ends-->
+        <!-- Card Starts-->
+        <div class="card col-12 col-md-6 col-lg-4 border-0 mb-4 grid">
           <div class="bg-light">
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
@@ -461,7 +556,7 @@
               alt="..."
             />
           </div>
-          <!-- add to cart -->
+          <!-- Add to cart Ends -->
           <div class="card-action">
             <div
               class="d-flex flex-row gap-1 justify-content-center align-items-center"
@@ -472,25 +567,17 @@
               ></span>
             </div>
           </div>
+          <!-- Add to cart Ends Ends -->
 
-          <!-- end of add to cart -->
           <div class="card-body mt-2">
             <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
             <p class="card-text text-center fs-6">$199.00</p>
           </div>
         </div>
-        <!-- end product card -->
-        <!-- start product card -->
-        <div class="card col-md-6 col-lg-4 border-0 mb-4">
+        <!-- Card ends-->
+        <!-- Card Starts-->
+        <div class="card col-12 col-md-6 col-lg-4 border-0 mb-4 grid">
           <div class="bg-light">
-            <!-- product badge -->
-            <div
-              class="bg-danger text-white text-center px-2 py-1"
-              style="width: 70px; position: absolute"
-            >
-              HOT
-            </div>
-            <!--enf of product badge -->
             <img
               src="https://pngimg.com/uploads/coat/coat_PNG78.png"
               class="card-img-top"
@@ -498,7 +585,7 @@
               alt="..."
             />
           </div>
-          <!-- add to cart -->
+          <!-- Add to cart Ends -->
           <div class="card-action">
             <div
               class="d-flex flex-row gap-1 justify-content-center align-items-center"
@@ -509,19 +596,116 @@
               ></span>
             </div>
           </div>
+          <!-- Add to cart Ends Ends -->
 
-          <!-- end of add to cart -->
           <div class="card-body mt-2">
             <h5 class="card-title text-center m-0">Mon fir Jeans</h5>
             <p class="card-text text-center fs-6">$199.00</p>
           </div>
         </div>
-        <!-- end product card -->
+        <!-- Card ends-->
       </div>
-      <!-- end of product card items -->
+      <!-- Product Grid lists Ends-->
+
+      <!--  Product List Starts -->
+      <div class="d-none d-lg-none w-100 col-12" id="list-display">
+        <div class="card d-flex flex-row col-12 border-0 mb-4 h-75">
+          <div class="bg-light w-50">
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              class="card-img-top"
+              style="height: 300px; object-fit: contain"
+              alt="..."
+            />
+          </div>
+
+          <div class="card-body mt-2">
+            <h5 class="card-title text-center m-0 fs-4">Mon fir Jeans</h5>
+            <p class="card-text text-center fs-5 p-4">$199.00</p>
+            <div
+              class="d-flex flex-row gap-1 justify-content-center align-items-center"
+            >
+              <span class="px-5 py-1 bg-danger text-white">ADD TO CART</span>
+              <span class=""
+                ><i class="fa-solid fa-heart p-2 bg-danger text-white"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="card d-flex flex-row col-12 border-0 mb-4 h-75">
+          <div class="bg-light w-50">
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              class="card-img-top"
+              style="height: 300px; object-fit: contain"
+              alt="..."
+            />
+          </div>
+
+          <div class="card-body mt-2">
+            <h5 class="card-title text-center m-0 fs-4">Mon fir Jeans</h5>
+            <p class="card-text text-center fs-5 p-4">$199.00</p>
+            <div
+              class="d-flex flex-row gap-1 justify-content-center align-items-center"
+            >
+              <span class="px-5 py-1 bg-danger text-white">ADD TO CART</span>
+              <span class=""
+                ><i class="fa-solid fa-heart p-2 bg-danger text-white"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="card d-flex flex-row col-12 border-0 mb-4 h-75">
+          <div class="bg-light w-50">
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              class="card-img-top"
+              style="height: 300px; object-fit: contain"
+              alt="..."
+            />
+          </div>
+
+          <div class="card-body mt-2">
+            <h5 class="card-title text-center m-0 fs-4">Mon fir Jeans</h5>
+            <p class="card-text text-center fs-5 p-4">$199.00</p>
+            <div
+              class="d-flex flex-row gap-1 justify-content-center align-items-center"
+            >
+              <span class="px-5 py-1 bg-danger text-white">ADD TO CART</span>
+              <span class=""
+                ><i class="fa-solid fa-heart p-2 bg-danger text-white"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="card d-flex flex-row col-12 border-0 mb-4 h-75">
+          <div class="bg-light w-50">
+            <img
+              src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+              class="card-img-top"
+              style="height: 300px; object-fit: contain"
+              alt="..."
+            />
+          </div>
+
+          <div class="card-body mt-2">
+            <h5 class="card-title text-center m-0 fs-4">Mon fir Jeans</h5>
+            <p class="card-text text-center fs-5 p-4">$199.00</p>
+            <div
+              class="d-flex flex-row gap-1 justify-content-center align-items-center"
+            >
+              <span class="px-5 py-1 bg-danger text-white">ADD TO CART</span>
+              <span class=""
+                ><i class="fa-solid fa-heart p-2 bg-danger text-white"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  Product List Ends -->
     </section>
-    <!-- end of product lists -->
 
+    <script src="./index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
