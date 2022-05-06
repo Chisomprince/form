@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details | Flint Store</title>
+
+    <!-- web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 
+    Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Styles -->
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation bar Starts -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- web title or Logo -->
+        <a href="/" class="navbar-brand fs-4 fw-bold">Flint</a>
+
+        <!-- Mobile menu, cart and search Start -->
+        <div
+          class="d-flex flex-row justify-content-center align-items-center gap-4"
+        >
+          <!-- Search for mobile -->
+          <a href="#" class="d-lg-none">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <!-- Cart bag for mobile Starts-->
+          <div class="d-lg-none" style="position: relative">
+            <i class="fa-solid fa-bag-shopping fa-1x"></i>
+            <span
+              class="rounded-circle bg-danger d-flex justify-content-center align-items-center text-white"
+              style="
+                position: absolute;
+                bottom: -5px;
+                left: 10px;
+                height: 14px;
+                width: 14px;
+                font-size: 10px;
+              "
+            >
+              2
+            </span>
+          </div>
+          <!--Cart for mobile Ends-->
+          <!--Mobile menu Starts-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collasibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!--Mobile menu Ends-->
+        <div class="navbar-collapse collapse" id="collasibleNavbar">
+          <!-- Nav links Starts-->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="" class="nav-link">Demos</a></li>
+            <li class="nav-item">
+              <a href="" class="nav-link active">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Journal</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Elements</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Pages</a></li>
+          </ul>
+          <!-- Nav links Ends-->
+
+          <!-- Nav actions Starts -->
+          <ul class="navbar-nav">
+            <li class="nav-item d-none d-lg-block">
+              <a href="/search.html" class="nav-link"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+
+            <li class="nav-item d-none d-lg-block">
+              <a href="/cart.html" class="nav-link">
+                <div class="mx-1" style="position: relative">
+                  <i class="fa-solid fa-bag-shopping fa-1x"></i>
+                  <span
+                    class="rounded-circle bg-danger d-flex justify-content-center align-items-center text-white"
+                    style="
+                      position: absolute;
+                      bottom: -5px;
+                      left: 10px;
+                      height: 14px;
+                      width: 14px;
+                      font-size: 10px;
+                    "
+                  >
+                    2
+                  </span>
+                </div></a
+              >
+            </li>
+
+            <li class="nav-item d-none d-lg-block">
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="nav-link"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="fa-solid fa-bars"></i
+                ></a>
+
+                <ul
+                  class="dropdown-menu dropdown-menu-center"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#"><small>Cloths</small></a>
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Shoes</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Boys</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Girls</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Ladies</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Men</small></a
+                    >
+                  </li>
+                  <li>
+                    <a class="fs-6 dropdown-item" href="#"
+                      ><small>Babies</small></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- Nav actions Ends-->
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation bar Ends -->
+    <!-- Breadcrumb Starts -->
+    <div class="bg-light pt-4">
+      <nav aria-label="breadcrumb ">
+        <div class="container">
+          <ol class="breadcrumb bg-light">
+            <li class="breadcrumb-item">
+              <small><a href="#">Home</a></small>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#"><small>Library</small></a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <small>Fantastic Granite Clock</small>
+            </li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+    <!-- Breadcrumb Ends -->
+
+    <!-- Main Content Starts -->
+    <main class="">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-12 col-md-6 mb-8 mb-md-0">
+            <!-- Image -->
+            <div class="position-relative mb-10 bg-light" style="height: 464px">
+              <img
+                class="w-100 h-100"
+                style="object-fit: contain"
+                src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+                alt=""
+              />
+            </div>
+
+            <!-- Tumbnails Starts-->
+            <div class="row">
+              <div class="col-3 col-sm-3 p-2">
+                <a class="d-block border border-info" href="#">
+                  <img
+                    class="w-100"
+                    style="height: 100px; object-fit: contain"
+                    src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-3 col-sm-3 p-2">
+                <a class="d-block" href="#">
+                  <img
+                    class="w-100 img-fluid"
+                    style="height: 100px; object-fit: contain"
+                    src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-3 col-sm-3 p-2">
+                <a class="d-block" href="#">
+                  <img
+                    class="w-100 img-fluid"
+                    style="height: 100px; object-fit: contain"
+                    src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="col-3 col-sm-3 p-2">
+                <a class="d-block" href="#">
+                  <img
+                    class="w-100 img-fluid"
+                    style="height: 100px; object-fit: contain"
+                    src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Tumbnails Ends -->
+          </div>
+          <!-- Actions -->
+          <div class="col-12 col-md-6">
+            <div class="ps-lg-20">
+              <div class="mb-10 pb-10">
+                <h1 class="mt-2 mb-6 mw-xl">Fantastic Granite Clock</h1>
+                <p class="text-secondary">
+                  in<a class="text-danger" href="#"> Women Clothing</a>
+                </p>
+                <p class="d-inline-block mb-8 h5 text-dark">
+                  <span>$29.99</span>
+                  <span
+                    class="fw-normal text-secondary text-decoration-line-through"
+                    style="font-size: 16px"
+                    >$33.69</span
+                  >
+                </p>
+                <p class="mw-md text-secondary">
+                  Maecenas commodo libero ut molestie dictum. Morbi placerat
+                  eros id porttitor sagittis.
+                </p>
+              </div>
+              <!-- Add to Cart Share and Favourite Starts-->
+              <div class="d-flex align-items-center mb-6 py-2">
+                <div class="mr-4">
+                  <!-- <span class="d-block fw-bold text-secondary tetx-uppercase"
+                    >QTY
+                  </span> -->
+                  <div
+                    class="d-flex gap-1 align-items-center px-4 fw-bold text-secondary border rounded-lg"
+                  >
+                    <button class="btn">+</button>
+                    <input
+                      class="form-control px-2 text-center text-md-end border-0"
+                      style="width: 48px; min-height: 52px"
+                      type="number"
+                      placeholder="1"
+                    />
+                    <button class="btn">-</button>
+                  </div>
+                </div>
+
+                <a
+                  class="h-100 ms-auto ms-sm-0 flex-shrink-0 d-inline-flex me-4 align-items-center justify-content-center rounded-2 border"
+                  href="#"
+                  style="width: 64px; min-height: 52px"
+                >
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4993 26.2061L4.70067 16.9253C3.9281 16.1443 3.41815 15.1374 3.24307 14.0471C3.06798 12.9568 3.23664 11.8385 3.72514 10.8505V10.8505C4.09415 10.1046 4.63318 9.45803 5.29779 8.96406C5.96241 8.47008 6.73359 8.14284 7.54782 8.00931C8.36204 7.87578 9.19599 7.93978 9.98095 8.19603C10.7659 8.45228 11.4794 8.89345 12.0627 9.48319L13.4993 10.9358L14.9359 9.48319C15.5192 8.89345 16.2327 8.45228 17.0177 8.19603C17.8026 7.93978 18.6366 7.87578 19.4508 8.00931C20.265 8.14284 21.0362 8.47008 21.7008 8.96406C22.3654 9.45803 22.9045 10.1046 23.2735 10.8505V10.8505C23.762 11.8385 23.9306 12.9568 23.7556 14.0471C23.5805 15.1374 23.0705 16.1443 22.298 16.9253L13.4993 26.2061Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  class="flex-shrink-0 h-100 d-inline-flex align-items-center justify-content-center rounded-2 border"
+                  href="#"
+                  style="width: 64px; min-height: 52px"
+                >
+                  <svg
+                    width="24"
+                    height="23"
+                    viewBox="0 0 24 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.01328 18.9877C2.05682 16.7902 2.71436 12.9275 6.3326 9.87096L6.33277 9.87116L6.33979 9.86454L6.3398 9.86452C6.34682 9.85809 8.64847 7.74859 13.4997 7.74859C13.6702 7.74859 13.8443 7.75111 14.0206 7.757L14.0213 7.75702L14.453 7.76978L14.6331 7.77511V7.59486V3.49068L21.5728 10.5736L14.6331 17.6562V13.6558V13.5186L14.4998 13.4859L14.1812 13.4077C14.1807 13.4075 14.1801 13.4074 14.1792 13.4072M2.01328 18.9877L14.1792 13.4072M2.01328 18.9877C7.16281 11.8391 14.012 13.3662 14.1792 13.4072M2.01328 18.9877L14.1792 13.4072M23.125 10.6961L23.245 10.5736L23.125 10.4512L13.7449 0.877527L13.4449 0.571334V1V6.5473C8.22585 6.54663 5.70981 8.81683 5.54923 8.96832C-0.317573 13.927 0.931279 20.8573 0.946581 20.938L0.946636 20.9383L1.15618 22.0329L1.24364 22.4898L1.47901 22.0885L2.041 21.1305L2.04103 21.1305C4.18034 17.4815 6.71668 15.7763 8.8873 15.0074C10.9246 14.2858 12.6517 14.385 13.4449 14.4935V20.1473V20.576L13.7449 20.2698L23.125 10.6961Z"
+                      fill="black"
+                      stroke="black"
+                      stroke-width="0.35"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- Add to Cart Share and Favourite Ends-->
+              <!-- Size selec and Color Select Starts -->
+              <div class="d-flex mb-12 py-4">
+                <div class="mr-4">
+                  <span class="d-block fw-bold text-secondary text-uppercase"
+                    >Size</span
+                  >
+                  <select
+                    class="form-select border rounded p-2 pe-10 fw-bold text-secondary gap-4"
+                    style="width: 150px; min-height: 52px"
+                    name=""
+                    id=""
+                  >
+                    <option value="1">Medium</option>
+                    <option value="2">Small</option>
+                    <option value="3">Large</option>
+                  </select>
+                </div>
+                <div class="">
+                  <span class="d-block fw-bold text-secondary text-uppercase"
+                    >Color</span
+                  >
+                  <select
+                    class="form-select border p-2 pe-10 fw-bold text-secondary gap-4 rounded"
+                    style="width: 150px; min-height: 52px"
+                    name=""
+                    id=""
+                  >
+                    <option value="1">Red</option>
+                    <option value="2">White</option>
+                    <option value="3">Orange</option>
+                  </select>
+                </div>
+              </div>
+              <!--Size select and Color Select Ends -->
+              <div class="row mb-14">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <a class="btn w-100 btn-danger py-3" href="#">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab starts -->
+        <ul class="nav nav-pills mb-3 mt-4" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active bg-danger"
+              id="pills-home-tab"
+              data-toggle="pill"
+              href="#pills-home"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+              >Reviws and Rating</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-profile-tab"
+              data-toggle="pill"
+              href="#pills-profile"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+              >Description</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-contact-tab"
+              data-toggle="pill"
+              href="#pills-contact"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+              >Contact Details</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="pills-contact-tab"
+              data-toggle="pill"
+              href="#pills-contact"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+              >General Information</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active py-2 mb-5"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            laboriosam nihil voluptatem quas explicabo sequi cumque incidunt
+            harum molestias natus odit reprehenderit quisquam, nemo eligendi
+            excepturi magni consequatur eum dolorem aspernatur ut ullam libero.
+            Blanditiis voluptate fugiat, officiis fugit ut eum deleniti ex
+            minima ab sunt iure. Eum, rerum atque?
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+          ></div>
+        </div>
+        <!-- Tab Ends -->
+      </div>
+    </main>
+    <!-- Main Content Ends -->
+
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <!-- Item -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5">
+            <div class="d-flex flex-column flex-md-row">
+              <div class="">
+                <div class="mb-3">
+                  <h5 class="m-0">About</h5>
+                  <span
+                    class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                    style="width: 50px"
+                  ></span>
+                </div>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris ac maximus neque.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5">
+            <div class="d-flex flex-column flex-md-row">
+              <div class="">
+                <div class="mb-3">
+                  <h5 class="m-0">Explore</h5>
+                  <span
+                    class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                    style="width: 50px"
+                  ></span>
+                </div>
+
+                <a href="#" class="m-0 d-block text-white"
+                  >Terms and Conditions</a
+                >
+                <a href="#" class="m-0 d-block text-white">Privacy Policy</a>
+                <a href="#" class="m-0 d-block text-white">Brand Story</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5">
+            <div class="mb-3">
+              <h6 class="m-0">Subscribe to our newsletter</h6>
+              <span
+                class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                style="width: 50px"
+              ></span>
+            </div>
+            <div class="border rounded p-2">
+              <form>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-warning d-block">
+                  Submit
+                </button>
+                <small>
+                  We'll never share your email address with any third party
+                </small>
+              </form>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5">
+            <div class="d-flex flex-column flex-md-row">
+              <div class="">
+                <div class="mb-3">
+                  <h5 class="m-0">Contact</h5>
+                  <span
+                    class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                    style="width: 50px"
+                  ></span>
+                </div>
+
+                <p class="mt-0">STORE BOUNTY, INC.</p>
+                <a href="#" class="m-0 text-white d-block"
+                  >info@storebounty.com</a
+                >
+                <a href="#" class="m-0 text-white d-block">+234 123 456 789</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Scripts Starts -->
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Vue js -->
+    <!-- <script src="https://unpkg.com/vue@3"></script> -->
+    <!-- Custom Script -->
+    <!-- <script src="/app.js"></script> -->
+  </body>
+</html>

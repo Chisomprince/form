@@ -39,7 +39,7 @@
   <body>
     <div id="app">
       <!-- Navigation bar Starts -->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <!-- web title or Logo -->
           <a href="/" class="navbar-brand fs-4 fw-bold">Flint</a>
@@ -104,13 +104,13 @@
             <!-- Nav actions Starts -->
             <ul class="navbar-nav">
               <li class="nav-item d-none d-lg-block">
-                <a href="#" class="nav-link"
+                <a href="/search.html" class="nav-link"
                   ><i class="fa-solid fa-magnifying-glass"></i
                 ></a>
               </li>
 
               <li class="nav-item d-none d-lg-block">
-                <a href="#" class="nav-link">
+                <a href="/cart.html" class="nav-link">
                   <div class="mx-1" style="position: relative">
                     <i class="fa-solid fa-bag-shopping fa-1x"></i>
                     <span
@@ -460,14 +460,15 @@
           >
             <div class="d-flex flex-column">
               <div class="bg-light order-1">
-                <img
-                  src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-                  class="card-img-top"
-                  style="height: 300px; object-fit: contain"
-                  alt="..."
-                />
+                <a href="/product-details.html">
+                  <img
+                    src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+                    class="card-img-top"
+                    style="height: 300px; object-fit: contain"
+                    alt="..."
+                /></a>
               </div>
-              <!-- Add to cart Ends -->
+              <!-- Add to cart Starts -->
               <div class="card-action order-3 order-lg-2">
                 <div
                   class="d-flex flex-row gap-1 justify-content-center align-items-center"
@@ -481,7 +482,7 @@
                   ></span>
                 </div>
               </div>
-              <!-- Add to cart Ends Ends -->
+              <!-- Add to cart Ends -->
 
               <div class="card-body mt-0 mt-2 order-2 order-lg-3">
                 <h5 class="card-title text-center m-0">
@@ -508,12 +509,14 @@
             class="card d-flex flex-row col-12 border-0 mb-4 h-75"
           >
             <div class="bg-light w-50">
-              <img
-                src="https://pngimg.com/uploads/coat/coat_PNG78.png"
-                class="card-img-top"
-                style="height: 300px; object-fit: contain"
-                alt="..."
-              />
+              <a href="/product-details.html">
+                <img
+                  src="https://pngimg.com/uploads/coat/coat_PNG78.png"
+                  class="card-img-top"
+                  style="height: 300px; object-fit: contain"
+                  alt="..."
+                />
+              </a>
             </div>
 
             <div class="card-body mt-2">
@@ -535,6 +538,116 @@
         <!--  Product List Ends -->
       </section>
       <!-- Product Ends-->
+
+      <!-- Footer Starts -->
+      <footer class="bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <!-- Item -->
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="d-flex flex-column flex-md-row">
+                <div class="">
+                  <div class="mb-3">
+                    <h5 class="m-0">About</h5>
+                    <span
+                      class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                      style="width: 50px"
+                    ></span>
+                  </div>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris ac maximus neque.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="d-flex flex-column flex-md-row">
+                <div class="">
+                  <div class="mb-3">
+                    <h5 class="m-0">Explore</h5>
+                    <span
+                      class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                      style="width: 50px"
+                    ></span>
+                  </div>
+
+                  <a href="#" class="m-0 d-block text-white"
+                    >Terms and Conditions</a
+                  >
+                  <a href="#" class="m-0 d-block text-white">Privacy Policy</a>
+                  <a href="#" class="m-0 d-block text-white">Brand Story</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="mb-3">
+                <h6 class="m-0">Subscribe to our newsletter</h6>
+                <span
+                  class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                  style="width: 50px"
+                ></span>
+              </div>
+              <div class="border rounded p-2">
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+
+                  <button type="submit" class="btn btn-warning d-block">
+                    Submit
+                  </button>
+                  <small>
+                    We'll never share your email address with any third party
+                  </small>
+                </form>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <div class="d-flex flex-column flex-md-row">
+                <div class="">
+                  <div class="mb-3">
+                    <h5 class="m-0">Contact</h5>
+                    <span
+                      class="text-white border-bottom pb-2 -mt-1 d-inline-block"
+                      style="width: 50px"
+                    ></span>
+                  </div>
+
+                  <p class="mt-0">STORE BOUNTY, INC.</p>
+                  <a href="#" class="m-0 text-white d-block"
+                    >info@storebounty.com</a
+                  >
+                  <a href="#" class="m-0 text-white d-block"
+                    >+234 123 456 789</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End -->
     </div>
     <!-- bootstrap js -->
     <script

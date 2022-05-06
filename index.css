@@ -2,9 +2,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.active {
-  font-weight: 600;
-}
 .hero {
   height: 75vh;
 }
@@ -55,4 +52,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.bc-icons-2 .breadcrumb-item + .breadcrumb-item::before {
+  content: none;
+}
+
+.bc-icons-2 .breadcrumb-item.active {
+  color: #455a64;
+}
+
+/*   Change Color for Active Tabs     */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover,
+.nav-pills > li > a:hover,
+.nav > li > a:hover {
+  background-color: #ce1b1b;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/*   Change Color for Inactive Tabs     */
+.nav-pills > li > a {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #ffffff00;
+  color: #696969;
 }
